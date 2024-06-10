@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>AluraGeek</title>
+</head>
+<body>
+    <!-------El titulo------->
+    <header class="section_titulo">
+        <img src="img/calabera.png" alt="calabera" class="img-titulo">
+        <h1>AluraGeek</h1>
+        <img src="img/calabera.png" alt="calabera" class="img-titulo">
+    </header>
+
+    <!-------Seccion principal------->
+    <div class="sections-container">
+        <!-------Mis productos------->
+        <section class="mis_productos">
+            <h2>MIS PRODUCTOS:</h2> 
+            <div class="product-container" data-product>
+                
+            </div>
+        </section>
+
+        <!-------Agregar Productos------->
+        <section class="agreg_productos">
+            <h2>AGREGAR PRODUCTOS:</h2> 
+            <div class="formulario">
+                <form data-form>
+                    <input type="text" id="product-name" data-name placeholder="nombre...">
+
+                    <input type="number" id="product-price" data-price placeholder="precio...">
+                    
+                    <input type="text" id="product-image" data-image placeholder="imagen...">
+
+                    <div class="botones_form">
+                        <button class="boton-formulario1" type="submit">Enviar</button>
+                        <button class="boton-formulario2" type="reset">Limpiar</button>
+                    </div>
+                </form>
+                
+            </div>
+        </section>
+    </div>
+
+    <!-------El footer------->
+    <footer>
+        <h3>AluraGeek</h3>
+        <p class="text_footer">Desarrollado por [Miguel Chavez]</p>
+        <p class="text_footer">Alura Latam - 2024</p>
+    </footer>
+
+    <script type="module" src="./js/controller/main.js"></script>
+</body>
+</html>

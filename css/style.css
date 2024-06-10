@@ -1,0 +1,216 @@
+body {
+    background-color: #000;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+/*--------El titulo----------*/
+.section_titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+}
+
+h1 {
+    color: #fff;
+    font-weight: 700;
+}
+
+.img-titulo {
+    width: 5%; 
+}
+
+/*--------Mis productos----------*/
+h2 {
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.mis_productos{
+    flex: 1;
+    margin: 10px;
+    border-right: 1px solid #fff;
+}
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.product {
+    width: calc(33.33% - 20px); 
+    margin: 10px;
+    border-radius: 8px;
+    color: white;
+}
+.product-img {
+    width: auto;
+    height: auto;
+    max-width: 300px; 
+    max-height: 200px; 
+    border: 5px solid white;
+    border-radius: 8px;
+}
+.product-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+.price-and-delete {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.product-price {
+    font-size: 18px;
+    margin: 0;
+}
+.borrar-boton {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.borrar-boton:hover {
+    color: red;
+}
+
+/*--------Agregar productos----------*/
+::placeholder { color: #ef2853; }
+.agreg_productos {
+    padding: 20px;
+    text-align: center;
+}
+
+.agreg_productos{
+    flex: 1;
+    margin: 10px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.formulario input {
+    border: 3px solid #ef2853;
+    background-color: #000000;
+    padding: 12px;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: white;
+}
+
+.formulario input:focus {
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.botones_form{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.boton-formulario1 {
+    background-color: #ef2853;
+    color: white;
+    border: none;
+    padding: 12px 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: auto;
+    margin-right: 10px;
+}
+
+.boton-formulario2{
+    background-color: black;
+    color: #ef2853;
+    border: 1px solid #ef2853;
+    padding: 12px 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: auto;
+}
+
+.boton-formulario1:hover{
+    background-color: #ffffff;
+    color: #ef2853;
+}
+
+.boton-formulario2:hover {
+    background-color: #ffffff;
+}
+/*--------Container for sections----------*/
+.sections-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/*--------Footer----------*/
+footer {
+    display: flex;
+    color: #fff;
+    font-weight: 700;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid #fff;
+}
+
+.text_footer {
+    font-weight: 200;
+    margin: 5px 0;
+}
+
+@media (min-width: 768px) and (max-width: 1145px) {
+    .product {
+        width: calc(50% - 15px);
+    }
+    .mis_productos{
+        border: 0;
+    }
+    .sections-container {
+        justify-content: center; 
+    }
+    .img-titulo {
+        width: 15%; 
+    }
+}
+    
+/*Mobile*/
+@media (min-width: 375px) and (max-width: 767px)  {
+    .img-titulo {
+        width: 15%; 
+    }
+    .product {
+        width: calc(50% - 10px);
+    }
+    .sections-container {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px;
+    }
+    .mis_productos{
+        border: 0;
+    }
+    .agreg_productos {
+        margin: 0;
+    }
+}

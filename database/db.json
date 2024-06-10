@@ -1,0 +1,16 @@
+{
+  "products": [
+    {
+      "name": "Castlevania",
+      "price": "78",
+      "image": "https://i.pinimg.com/564x/0c/82/ba/0c82bab1a81006765c1296223f161294.jpg",
+      "id": "1"
+    },
+    {
+      "name": "Doom",
+      "price": "58",
+      "image": "https://i.pinimg.com/236x/b0/02/4a/b0024a953ac44c9dea34068f6b5cbd28.jpg",
+      "id": "2"
+    }
+  ]
+}
